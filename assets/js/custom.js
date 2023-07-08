@@ -1,3 +1,16 @@
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() > 100) {
+//       // Change the scroll distance as needed
+//       $(".navbar").addClass("fixed-top").fadeIn("slow");
+//     } else {
+//       $(".navbar").fadeOut("slow", function () {
+//         $(this).removeClass("fixed-top");
+//       });
+//     }
+//   });
+// });
+//
 var dropdownToggle = document.querySelector(".custom-dropdown-toggle");
 dropdownToggle.addEventListener("click", function () {
   var dropdownMenu = this.nextElementSibling;
@@ -72,5 +85,15 @@ $(document).ready(function () {
   });
   $("#scrollToTopBtn").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+});
+
+// Get the language buttons in the modal body
+const languageButtons = document.querySelectorAll(".modal-body button");
+languageButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const newImageSrc = button.querySelector("img").src;
+    const languageIcon = document.getElementById("languageIcon");
+    languageIcon.src = newImageSrc;
   });
 });

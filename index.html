@@ -9,14 +9,21 @@
     <!-- slick  -->
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain/bsb.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+
+
     <title>Best Writing Assistant Software: AI Writing App | Paragraph AI</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-light bsb-navbar bsb-navbar-hover bsb-navbar-caret fixed-top">
         <div class="container-fluid px-5">
             <a class="navbar-brand p-2" href="#">
                 <img src="assets/img/ParagraphAI-Logo-1-min.png" alt="Logo">
@@ -36,16 +43,51 @@
                                     d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg>
                         </a>
-                        <ul class="dropdown-menu text-center" aria-labelledby="resourcesDropdown">
-                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 6</a></li>
+                        <ul class="dropdown-menu text-center border-0 bsb-zoomIn" aria-labelledby="resourcesDropdown">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle my-2" href="#!" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services<svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
+                                        class="ms-2">
+                                        <path
+                                            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                    </svg></a>
+                                <ul class="dropdown-menu border-0 bsb-zoomIn custom-dropdown-menu"
+                                    aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item my-2" href="#!">Writing</a></li>
+                                    <li><a class="dropdown-item my-2" href="#!">SEO</a></li>
+                                    <li><a class="dropdown-item my-2" href="#!">Web Design</a>
+                                    </li>
+                                    <li><a class="dropdown-item my-2" href="#!">App
+                                            Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 1</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 4</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 5</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle my-2" href="#!" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services<svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
+                                        class="ms-2">
+                                        <path
+                                            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                    </svg></a>
+                                <ul class="dropdown-menu border-0 bsb-zoomIn custom-dropdown-menu"
+                                    aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item my-2" href="#!">Writing</a></li>
+                                    <li><a class="dropdown-item my-2" href="#!">SEO</a></li>
+                                    <li><a class="dropdown-item my-2" href="#!">Web Design</a>
+                                    </li>
+                                    <li><a class="dropdown-item my-2" href="#!">App
+                                            Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 6</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
                         <a class="btn btn-link nav-link border-0" type="button">Pricing</a>
                     </li>
@@ -58,13 +100,13 @@
                                     d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg>
                         </a>
-                        <ul class="dropdown-menu text-center" aria-labelledby="companyDropdown">
-                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 6</a></li>
+                        <ul class="dropdown-menu text-center border-0 bsb-zoomIn" aria-labelledby="companyDropdown">
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 1</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 4</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 5</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 6</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -76,41 +118,25 @@
                                     d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg>
                         </a>
-                        <ul class="dropdown-menu text-center" aria-labelledby="supportDropdown">
-                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown 6</a></li>
+                        <ul class="dropdown-menu text-center border-0 bsb-zoomIn" aria-labelledby="supportDropdown">
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 1</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 4</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 5</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 6</a></li>
+                            <li><a class="dropdown-item my-2" href="#">Dropdown 2</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <select class="form-select nav-link" aria-label="Language">
-                            <option selected>Languages</option>
-                            <option value="en">English</option>
-                            <option value="es">Spanish</option>
-                            <option value="fr">French</option>
-                            <option value="de">German</option>
-                            <option value="it">Italian</option>
-                            <option value="pt">Portuguese</option>
-                            <option value="ru">Russian</option>
-                            <option value="ja">Japanese</option>
-                            <option value="ko">Korean</option>
-                            <option value="zh">Chinese</option>
-                            <option value="ar">Arabic</option>
-                            <option value="hi">Hindi</option>
-                            <option value="id">Indonesian</option>
-                            <option value="nl">Dutch</option>
-                            <option value="pl">Polish</option>
-                            <option value="sv">Swedish</option>
-                            <option value="tr">Turkish</option>
-                            <option value="vi">Vietnamese</option>
-                            <option value="th">Thai</option>
-                            <option value="el">Greek</option>
-                        </select>
-                    </li>
                 </ul>
+                <!-- //////////? -->
+                <a class="btn-link nav-link border-0" type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Languages">
+                    <img id="languageIcon" src="assets/icon/internet.png" alt="internet" width="25" height="25">
+                </a>
+
+                <!-- //////////? -->
                 <ul>
                     <li class="nav-item btn-gradient mt-3">
                         <button class="btn nav-link d-flex align-items-center ms-5" type="button"><svg
@@ -129,6 +155,99 @@
             </div>
         </div>
     </nav>
+    <!-- //////////////? -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Languages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 col-12 d-grid g-2">
+                                <button type="button" class="btn text-start btn-md"><img
+                                        src="assets/img/flags/united-kingdom.png" alt="" width="25" height="25"
+                                        class="img-fluid me-2">English</button>
+                                <button type="button" class="btn text-start btn-md"><img
+                                        src="assets/img/flags/spain.png" alt="" width="25" height="25"
+                                        class="img-fluid me-2">Spanish</button>
+                                <button type="button" class="btn text-start btn-md"><img
+                                        src="assets/img/flags/france.png" alt="" width="25" height="25"
+                                        class="img-fluid me-2">French</button>
+                                <button type="button" class="btn text-start btn-md"><img
+                                        src="assets/img/flags/german-flag.png" alt="" width="25" height="25"
+                                        class="img-fluid me-2">German</button>
+                                <button type="button" class="btn text-start btn-md"><img
+                                        src="assets/img/flags/united-arab-emirates.png" alt="" width="25" height="25"
+                                        class="img-fluid me-2">Mandarin Chinese</button>
+                                <button type="button" class="btn text-start btn-md"><img
+                                        src="assets/img/flags/united-arab-emirates.png" alt="" width="25" height="25"
+                                        class="img-fluid me-2">Arabic</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Russian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Portuguese</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Hindi</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Japanese</button>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-12 d-grid g-2">
+
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Italian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Korean</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Turkish</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Dutch</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Polish</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Swedish</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Danish</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Norwegian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Finnish</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Greek</button>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-12 d-grid g-2">
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Hebrew</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Thai</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Vietnamese</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Indonesian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Romanian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Czech</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Hungarian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Ukrainian</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Swahili</button>
+                                <button type="button" class="btn text-start btn-md"><img src="assets/icon/internet.png"
+                                        alt="" width="25" height="25" class="img-fluid me-2">Catalan</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////? -->
     <div class="container-fluid p-0 py-3 overflow-hidden">
         <div class="content_bg">
             <div class="row align-items-center px-5">
