@@ -98,3 +98,8 @@ languageButtons.forEach((button) => {
   });
 });
 ///////////////////////////////////////////
+function showPage(pageId) {
+  document.getElementById("cardspage").style.display = "none";
+  document.getElementById("cardspage1").style.display = "none";
+  document.getElementById(pageId).style.display = "block";
+}
