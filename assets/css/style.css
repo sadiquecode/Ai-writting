@@ -667,6 +667,7 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center left;
     background-size: contain;
+    z-index: 1000;
 }
 
 .blog_content h1 {
@@ -688,18 +689,18 @@ button:focus {
     line-height: 30px;
 }
 
-.content {
+.imgcontent,
+.Marketingimg {
     position: relative;
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
-.content .content-overlay {
+.imgcontent .content-overlay {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    height: 99%;
+    height: 100%;
     width: 100%;
     left: 0;
     top: 0;
@@ -711,7 +712,7 @@ button:focus {
     transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay {
+.imgcontent:hover .content-overlay {
     opacity: 1;
 }
 
@@ -735,7 +736,7 @@ button:focus {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details {
+.imgcontent:hover .content-details {
     top: 50%;
     left: 50%;
     opacity: 1;
