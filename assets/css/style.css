@@ -667,7 +667,6 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center left;
     background-size: contain;
-    z-index: 1000;
 }
 
 .blog_content h1 {
@@ -840,6 +839,157 @@ button:focus {
     border-radius: 0 !important;
     margin: 3px;
 }
+
+.socialmedia a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #492F92EB;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+}
+
+.socialmedia i {
+    color: var(--color--white);
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
+}
+
+.socialmedia a,
+.socialmedia i {
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1);
+}
+
+.socialmedia a:hover,
+.socialmedia i:hover {
+    background-color: #F26A39;
+    transform: scale(0.8);
+}
+
+/* --------------------------- education Styling -----------------------------*/
+.education_bg {
+    margin-top: 100px;
+    background-color: #F26A395C;
+    font-family: "Open Sans", Sans-serif !important;
+}
+
+.education_bg h1 {
+    color: var(--color-100efa4);
+    font-family: "Open Sans", Sans-serif !important;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 66px;
+    letter-spacing: -2.5px;
+    margin-bottom: 18px;
+}
+
+.education_bg p a {
+    color: #7A7A7A;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.education_bg p a:hover {
+    color: #F26A39;
+}
+
+.education_content h2 {
+    font-size: 28px;
+    font-family: "Open Sans", Sans-serif;
+    letter-spacing: -1.5px;
+    line-height: 18px;
+}
+
+.education_content p {
+    color: #0C0C1A;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.education_content span {
+    color: #7A7A7A;
+}
+
+.education_content ul li {
+    list-style: circle !important;
+}
+
+.tab_btn button,
+.price_card_btn button {
+    border: none !important;
+    border-radius: 5px;
+    color: var(--color--white);
+    background: var(--color--btn--linear-gradient);
+}
+
+.tab_btn button:hover,
+.price_card_btn button:hover {
+    color: var(--color--white) !important;
+    background: linear-gradient(360deg, #00A4CCFF 20%, #F95700FF 100%);
+
+}
+
+.card-header {
+    background-color: var(--color-vivid-orange) !important;
+    padding: 20px 0 !important;
+}
+
+.card-header h3 {
+    color: var(--color-100efa4);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-header p {
+    color: var(--color--white);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.pricing {
+    font-size: 65px;
+    color: var(--color-100efa4);
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    display: block;
+}
+
+.orignal_price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: var(--color-308e809);
+}
+
+.promo_price {
+    letter-spacing: 2px;
+}
+
+.dollor,
+.point {
+    font-size: 22px;
+    vertical-align: text-top;
+}
+
+.month {
+    margin-top: -25px;
+}
+
+.price_table_feature p {
+    font-size: 15px;
+    font-family: "Open Sans", Sans-serif;
+    line-height: 16px;
+}
+
 
 @media (max-width:1199px) {
     .langugesone {
