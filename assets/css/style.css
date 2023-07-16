@@ -224,7 +224,8 @@ p {
 .Testimonials h1,
 .faq_content h1,
 .potential_ai h1,
-.limitless_content h1 {
+.limitless_content h1,
+.partner_pro h1 {
     color: var(--color-100efa4);
     font-family: "Comfortaa", Sans-serif;
     font-size: 55px;
@@ -672,18 +673,19 @@ button:focus {
 .blog_content h1 {
     color: var(--color-100efa4);
     font-family: "Comfortaa", Sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 66px;
     letter-spacing: 1px;
     margin-bottom: 18px;
 }
 
-.blog_content p {
+.blog_content h3 {
     color: #7A7A7A;
-    font-family: "Open Sans", Sans-serif;
-    font-weight: inherit;
+    /* font-family: "Open Sans", Sans-serif; */
+    /* font-weight: inherit; */
     width: 80%;
+    font-weight: 300;
     font-size: 30px;
     line-height: 30px;
 }
@@ -887,7 +889,8 @@ button:focus {
     margin-bottom: 18px;
 }
 
-.education_bg p a {
+.education_bg p a,
+.Partner_content p a {
     color: #7A7A7A;
     font-family: "Open Sans", Sans-serif;
     font-weight: 200;
@@ -895,7 +898,8 @@ button:focus {
     text-decoration: none;
 }
 
-.education_bg p a:hover {
+.education_bg p a,
+.Partner_content p a:hover {
     color: #F26A39;
 }
 
@@ -925,7 +929,7 @@ button:focus {
 .tab_btn button,
 .price_card_btn button {
     border: none !important;
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--color--white);
     background: var(--color--btn--linear-gradient);
 }
@@ -990,6 +994,50 @@ button:focus {
     line-height: 16px;
 }
 
+.partner_bg {
+    background-image: url('../img/partnerimg.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0% 70%;
+}
+
+.Partner_content h1 {
+    color: var(--color-100efa4);
+    font-family: "Comfortaa", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.Partner_content p {
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+}
+
+.Partner_img img {
+    border-radius: 45px 0 45px 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Partner_content p a {
+    color: var(--color--black);
+}
+
 
 @media (max-width:1199px) {
     .langugesone {
@@ -1031,7 +1079,8 @@ button:focus {
     .Testimonials h1,
     .faq_content h1,
     .potential_ai h1,
-    .limitless_content h1 {
+    .limitless_content h1,
+    .partner_pro h1 {
         font-size: var(--font-size--large);
         line-height: 25px;
     }
