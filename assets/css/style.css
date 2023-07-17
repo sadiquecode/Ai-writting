@@ -274,11 +274,6 @@ p {
     letter-spacing: 1px;
 }
 
-.slider_images,
-.slicktwo {
-    overflow: hidden !important;
-}
-
 .slider_images img {
     margin: auto 20px !important;
 }
@@ -933,16 +928,27 @@ button:focus {
     list-style: circle !important;
 }
 
-.tab_btn button,
 .price_card_btn button {
+    border: none !important;
+    border-radius: 10px;
+    color: var(--color--white);
+    background: var(--color--btn--linear-gradient) !important;
+}
+
+
+.price_card_btn button:hover {
+    background: linear-gradient(90deg, #00A4CCFF 33%, #F95700FF 100%);
+}
+
+.tab_btn button {
     border: none !important;
     border-radius: 10px;
     color: var(--color--white);
     background-color: var(--color-vivid-orange);
 }
 
-.tab_btn button:hover,
-.price_card_btn button:hover {
+.tab_btn button:hover {
+    background-color: var(--color-vivid-orange);
     color: var(--color--white) !important;
 }
 
