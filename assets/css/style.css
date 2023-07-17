@@ -91,6 +91,10 @@ p {
     background-color: transparent !important;
 }
 
+.dropdown-menu li a:hover {
+    color: var(--color-vivid-orange) !important;
+}
+
 /* Custom CSS styles */
 .navbar {
     height: 90px !important;
