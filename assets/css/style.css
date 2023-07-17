@@ -12,6 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
+    overflow-x: hidden;
     --color--black: #000000;
     --color--cyan-bluish-gray: #abb8c3;
     --color--white: #ffffff;
@@ -672,6 +673,14 @@ button:focus {
     background-size: contain;
 }
 
+.blog_card {
+    padding: 0 40px;
+}
+
+.blog_col {
+    height: 50vh;
+}
+
 .blog_content h1 {
     color: var(--color-100efa4);
     font-family: "Comfortaa", Sans-serif;
@@ -684,8 +693,6 @@ button:focus {
 
 .blog_content h3 {
     color: #7A7A7A;
-    /* font-family: "Open Sans", Sans-serif; */
-    /* font-weight: inherit; */
     width: 80%;
     font-weight: 300;
     font-size: 30px;
@@ -892,17 +899,19 @@ button:focus {
 }
 
 .education_bg p a,
-.Partner_content p a {
-    color: #7A7A7A;
+.Partner_content p a,
+.education_content p a {
+    color: #7A7A7A !important;
     font-family: "Open Sans", Sans-serif;
     font-weight: 200;
     font-size: 20px;
     text-decoration: none;
 }
 
-.education_bg p a,
-.Partner_content p a:hover {
-    color: #F26A39;
+.education_bg p a:hover,
+.Partner_content p a:hover,
+.education_content p a:hover {
+    color: #F26A39 !important;
 }
 
 .education_content h2 {
@@ -924,6 +933,10 @@ button:focus {
     color: #7A7A7A;
 }
 
+.education_content ul {
+    padding-left: 48px !important;
+}
+
 .education_content ul li {
     list-style: circle !important;
 }
@@ -933,6 +946,7 @@ button:focus {
     border-radius: 10px;
     color: var(--color--white);
     background: var(--color--btn--linear-gradient) !important;
+    padding: 15px 30px !important;
 }
 
 
@@ -1185,7 +1199,7 @@ button:focus {
     }
 
     .Limitless_content {
-        padding: 5px 20px 5px 20px !important;
+        padding: 5px 0px !important;
     }
 
     .potential_ai {
@@ -1238,5 +1252,44 @@ button:focus {
 
     .social_icon_bottom {
         display: block !important;
+    }
+
+    .blog_content h1 {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .blog_content h3 {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .blog_card {
+        padding: 0;
+    }
+
+    .blog_col {
+        height: auto;
+    }
+
+    .education_content ul {
+        padding-left: 12px !important;
+    }
+
+    .price_card_btn button {
+        padding: 10px 25px !important;
+    }
+
+    .Partner_img img {
+        border-radius: 20px 0 20px 0;
+    }
+
+    .Partner_content h1 {
+        color: var(--color-100efa4);
+        font-family: "Comfortaa", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 }
