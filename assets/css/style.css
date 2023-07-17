@@ -965,6 +965,51 @@ button:focus {
     font-weight: normal;
 }
 
+/* ///////////? */
+.elementor-price-table__ribbon.elementor-ribbon-right {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: auto;
+    right: 0;
+}
+
+.elementor-price-table__ribbon {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 150px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.elementor-price-table__ribbon-inner {
+    color: var(--color--white);
+}
+
+
+.elementor-price-table__ribbon-inner {
+    text-align: center;
+    left: 0;
+    width: 200%;
+    -webkit-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    -ms-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    margin-top: 35px;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: var(--color-100efa4);
+}
+
+
+/* ///////////? */
+
 .pricing {
     font-size: 65px;
     color: var(--color-100efa4);
