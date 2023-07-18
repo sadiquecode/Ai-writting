@@ -110,7 +110,7 @@ p {
 }
 
 .navbar-brand img {
-    width: 200px;
+    width: 100% !important;
     height: 30px;
 }
 
@@ -152,21 +152,14 @@ p {
     display: block;
 }
 
-.langugestwo {
+.langugestwo a {
     display: none;
 }
 
-.langugestwo {
-    padding-right: 40px;
-}
-
 .btn-gradient button {
-    border-radius: 8px;
     background-image: var(--color--btn--linear-gradient);
     color: var(--color--white) !important;
-    padding: 14px 40px;
     border: transparent;
-    font-weight: 700;
 }
 
 .btn-gradient span {
@@ -673,7 +666,8 @@ button:focus {
     background-size: contain;
 }
 
-.blog_card {
+.blog_card,
+.footer_content {
     padding: 0 40px;
 }
 
@@ -1119,12 +1113,8 @@ button:focus {
         display: none;
     }
 
-    .langugestwo {
+    .langugestwo a {
         display: block;
-    }
-
-    .langugestwo {
-        padding-right: 20px;
     }
 
 }
@@ -1265,7 +1255,8 @@ button:focus {
         font-size: 23px;
     }
 
-    .blog_card {
+    .blog_card,
+    .footer_content {
         padding: 0;
     }
 
