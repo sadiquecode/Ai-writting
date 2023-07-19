@@ -80,12 +80,24 @@ p {
     background-color: var(--color--white) !important;
 }
 
+.small_screen_nav {
+    width: 100%;
+}
+
+.navbar_toggler_small_screen {
+    margin-right: auto;
+}
+
 .custom-dropdown-menu {
     top: 10px;
     left: 160px;
     right: 0;
     min-width: 200px;
     color: var(--e-global-color-308e809) !important;
+}
+
+.dropdown-menu {
+    text-align: right !important;
 }
 
 .dropdown-menu li a {
@@ -116,7 +128,7 @@ p {
 }
 
 .navbar-brand {
-    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .navbar {
@@ -138,6 +150,7 @@ p {
 
 .custom-dropdown-toggle svg {
     fill: var(--color-100efa4);
+    margin-right: 8px;
 }
 
 .custom-dropdown-toggle:hover svg {
@@ -168,6 +181,10 @@ p {
     font-weight: 400;
 }
 
+.btn-gradient i {
+    margin-left: 8px;
+}
+
 .btn-gradient button:hover {
     color: var(--color--white) !important;
 }
@@ -190,12 +207,33 @@ p {
     height: 100%;
 }
 
-.content_bg {
-    background-image: url('../img/Background-2.jpg');
-    background-repeat: no-repeat;
-    background-position: 100% 80%;
+.blog_bg {
+    margin-top: 100px;
+}
+
+.content_bg,
+.blog_bg {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+
+.content_bg::before,
+.blog_bg::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
     width: 100%;
     height: 100%;
+    background-position: 0% 80%;
+    background-image: url('../img/Background-2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content_bg::before,
+.blog_bg::before {
+    transform: rotate(-180deg);
 }
 
 .content h2,
@@ -210,8 +248,8 @@ p {
     font-size: 16px;
     font-weight: 600;
     line-height: 30px;
-    padding: 0px 0px 0px 5px;
-    border-left: 3px solid var(--color-vivid-orange);
+    padding: 0px 5px 0px 0px;
+    border-right: 3px solid var(--color-vivid-orange);
 }
 
 .content h1,
@@ -288,16 +326,38 @@ p {
 }
 
 .Write_Assist {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+
+.Write_Assist::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     background-image: url('../img/XMLID_1112_.png');
     background-repeat: no-repeat;
     background-position: 100% 30%;
+}
+
+.Write_Assist::after {
+    transform: rotate(-180deg);
+    transform: scaleX(-1);
+}
+
+/* .Write_Assist {
+    background-image: url('../img/XMLID_1112_.png');
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
     width: 100%;
     height: 100%;
-}
+} */
 
 .icon_heading {
     cursor: pointer;
-    margin: 12px 0;
+    margin: 8px 0;
 }
 
 .icon_heading span {
@@ -311,6 +371,10 @@ p {
 .icon_heading span:hover {
     color: var(--color-vivid-orange);
     transition: color 0.3s;
+}
+
+.icon_heading svg {
+    margin-left: 10px;
 }
 
 .content_bgtwo h4 {
@@ -328,7 +392,7 @@ p {
 .time_money {
     background-image: url('../img/Group.png');
     background-repeat: no-repeat;
-    background-position: 3% 60%;
+    background-position: 97% 6%;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -374,7 +438,7 @@ p {
 .Testimonials {
     background-image: url('../img/Group.png');
     background-repeat: no-repeat;
-    background-position: 2% 10%;
+    background-position: 97% 10%;
     width: 100%;
     height: 100%;
     z-index: 5;
@@ -519,9 +583,6 @@ p {
     font-size: 17px;
 }
 
-.footer_content li a:hover {
-    text-decoration: underline;
-}
 
 .social_icon_top {
     display: block !important;
@@ -601,6 +662,7 @@ p {
     align-self: center;
     color: #424770;
     font-weight: 500;
+    padding-left: 0 !important;
 }
 
 .form-control {
@@ -658,14 +720,28 @@ button:focus {
 }
 
 /* --------------------------- blog Styling -----------------------------*/
-
-.blog_bg {
-    margin-top: 100px;
-    background-image: url('../img/Background-2.jpg');
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: contain;
+.animate_blog {
+    animation: fadeInRight;
+    animation-duration: 2s;
 }
+
+@keyframes animate_blog {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.small_card_animate {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
 
 .blog_card,
 .footer_content {
@@ -794,11 +870,11 @@ button:focus {
     height: 1px;
     content: '\a0';
     background-color: #000;
-    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .title_lines:before {
-    margin-left: -50%;
+    margin-right: -50%;
     text-align: right;
 }
 
@@ -830,6 +906,10 @@ button:focus {
     font-size: small;
 }
 
+.card_body i {
+    margin-left: 0.5rem;
+}
+
 .page-link {
     color: #212529 !important;
     background-color: #fff !important;
@@ -844,6 +924,10 @@ button:focus {
     border: 1px solid #dee2e6 !important;
     border-radius: 0 !important;
     margin: 3px;
+}
+
+.page-item i {
+    transform: rotate(-180deg);
 }
 
 .socialmedia a {
@@ -929,7 +1013,7 @@ button:focus {
 }
 
 .education_content ul {
-    padding-left: 48px !important;
+    padding-right: 48px !important;
 }
 
 .education_content ul li {
@@ -985,15 +1069,15 @@ button:focus {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    left: auto;
-    right: 0;
+    right: auto;
+    left: 0;
 }
 
 .elementor-price-table__ribbon {
     position: absolute;
     top: 0;
-    left: auto;
-    right: 0;
+    right: auto;
+    left: 0;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -1009,11 +1093,11 @@ button:focus {
 
 .elementor-price-table__ribbon-inner {
     text-align: center;
-    left: 0;
+    right: 0;
     width: 200%;
-    -webkit-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
-    -ms-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
-    transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    -webkit-transform: translateY(50%) translateX(20%) translateX(20px) rotate(225deg);
+    -ms-transform: translateY(50%) translateX(20%) translateX(20px) rotate(225deg);
+    transform: translateY(240%) translateX(-17%) translateX(88px) rotate(225deg);
     margin-top: 35px;
     font-size: 13px;
     line-height: 2;
@@ -1097,6 +1181,10 @@ button:focus {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.check_list i {
+    margin-left: 16px;
 }
 
 .Partner_content p a {
@@ -1286,8 +1374,8 @@ button:focus {
     }
 }
 
-
-/* Arabic Language */
-.dropdown_arbic li a {
-    text-align: end !important;
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        padding: 0px;
+    }
 }

@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS  -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- CSS RTL  -->
+    <link rel="stylesheet" href="assets/css/stylertl.css">
     <!-- slick  -->
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
@@ -26,11 +28,11 @@
 
     <nav class="navbar navbar-expand-xl navbar-light bsb-navbar bsb-navbar-hover bsb-navbar-caret fixed-top">
         <div class="container-fluid p-0">
-            <div class="d-flex w-100">
+            <div class="d-flex small_screen_nav">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/ParagraphAI-Logo-1-min.png" alt="Logo" class="img-fluid">
                 </a>
-                <div class="d-flex ms-auto">
+                <div class="d-flex navbar_toggler_small_screen">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -50,13 +52,13 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle custom-dropdown-toggle" href="#" id="resourcesDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Resources<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
-                                class="ms-2">
+                            Resources<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                                 <path
                                     d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg>
                         </a>
-                        <ul class="dropdown-menu border-0 bsb-zoomIn" aria-labelledby="resourcesDropdown">
+                        <ul class="dropdown-menu border-0 bsb-zoomIn dropdown_arbic"
+                            aria-labelledby="resourcesDropdown">
                             <li><a class="dropdown-item my-2" href="blog.html">Blog</a></li>
                             <li><a class="dropdown-item my-2" href="blog-details.html">Blog Details</a></li>
                             <li><a class="dropdown-item my-2" href="affiliates.html">Affiliates</a></li>
@@ -68,8 +70,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle custom-dropdown-toggle" href="#" id="companyDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Company<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
-                                class="ms-2">
+                            Company<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                                 <path
                                     d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg>
@@ -94,7 +95,7 @@
             <div class="Paragraphai_btn w-100">
                 <div class=" nav-item btn-gradient d-flex align-items-center justify-content-center">
                     <button type="button" class="btn nav-link fw-bold d-flex align-items-center btn-lg"><i
-                            class="fa-brands fa-chrome fa-2x me-2" style="color: #ffffff;"></i>Get
+                            class="fa-brands fa-chrome fa-2x" style="color: #ffffff;"></i>Get
                         ParagraphAI<span> - It's Free</span></button>
                 </div>
             </div>
@@ -193,7 +194,7 @@
     </div>
 
     <section class="blog_bg">
-        <div class="container pb-5 overflow-x-hidden animate__animated  animate__fadeInLeft">
+        <div class="container pb-5 overflow-x-hidden animate__animated animate_blog">
             <div class="row align-items-center py-5 ">
                 <div class="col-md-8 col-lg-10 col-12">
                     <div class="blog_content">
@@ -262,32 +263,32 @@
                             <br><br>
                         </p>
                         <div class="justify-content-between align-items-center d-flex py-2">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                            <div class="d-flex align-items-center justify-content-center check_list">
+                                <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                                 <div class="flex-column d-flex Partner_content ">
                                     <p><a href="#">Influencers, bloggers, and community figures</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="justify-content-between align-items-center d-flex pb-2">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                            <div class="d-flex align-items-center justify-content-center check_list">
+                                <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                                 <div class="flex-column d-flex Partner_content ">
                                     <p><a href="#">College students, teachers and on campus leaders</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="justify-content-between align-items-center d-flex pb-2">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                            <div class="d-flex align-items-center justify-content-center check_list">
+                                <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                                 <div class="flex-column d-flex Partner_content ">
                                     <p><a href="#">Professionals with diverse networks and affiliations</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="justify-content-between align-items-center d-flex pb-2">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                            <div class="d-flex align-items-center justify-content-center check_list">
+                                <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                                 <div class="flex-column d-flex Partner_content ">
                                     <p><a href="#">Businesses and entrepreneurs passionate about what we do</a>
                                     </p>
@@ -307,24 +308,24 @@
                 <div class="Partner_content flex-column align-items-center justify-content-center px-4">
                     <h1>Learn and Grow With Us</h1>
                     <div class="justify-content-between align-items-center d-flex py-2">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                        <div class="d-flex align-items-center justify-content-center check_list">
+                            <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                             <div class="flex-column d-flex Partner_content ">
                                 <p><a href="#">Represent the #1 AI start-up and impact the future</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="justify-content-between align-items-center d-flex pb-2">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                        <div class="d-flex align-items-center justify-content-center check_list">
+                            <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                             <div class="flex-column d-flex Partner_content ">
                                 <p><a href="#">Mentorship and opportunities for advancement</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="justify-content-between align-items-center d-flex pb-2">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-check fa-2x me-3" style="color: #f26a39;"></i>
+                        <div class="d-flex align-items-center justify-content-center check_list">
+                            <i class="fa-solid fa-check fa-2x" style="color: #f26a39;"></i>
                             <div class="flex-column d-flex Partner_content ">
                                 <p><a href="#">Competitive compensation and other benefits</a></p>
                             </div>
@@ -627,7 +628,7 @@
                 <ul class="px-0" style="text-align: -webkit-center;">
                     <li class="nav-item btn-gradient mt-3">
                         <button class="btn nav-link d-flex align-items-center" type="button">
-                            <i class="fa-brands fa-chrome fa-2x me-2" style="color: #ffffff;"></i>Get ParagraphAI
+                            <i class="fa-brands fa-chrome fa-2x" style="color: #ffffff;"></i>Get ParagraphAI
                             <span>
                                 - It's Free</span>
                         </button>
@@ -719,7 +720,7 @@
                         </div>
                         <div class=" nav-item btn-gradient mt-3 d-grid align-items-center">
                             <button type="button" class="btn nav-link fw-bold d-flex align-items-center btn-lg"><i
-                                    class="fa-brands fa-chrome fa-2x me-2" style="color: #ffffff;"></i>Get
+                                    class="fa-brands fa-chrome fa-2x" style="color: #ffffff;"></i>Get
                                 ParagraphAI<span> - It's Free</span></button>
                         </div>
 

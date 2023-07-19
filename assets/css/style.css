@@ -79,6 +79,14 @@ p {
     background-color: var(--color--white) !important;
 }
 
+.small_screen_nav {
+    width: 100%;
+}
+
+.navbar_toggler_small_screen {
+    margin-left: auto;
+}
+
 .custom-dropdown-menu {
     top: 10px;
     left: 160px;
@@ -137,6 +145,7 @@ p {
 
 .custom-dropdown-toggle svg {
     fill: var(--color-100efa4);
+    margin-left: 8px;
 }
 
 .custom-dropdown-toggle:hover svg {
@@ -167,6 +176,10 @@ p {
     font-weight: 400;
 }
 
+.btn-gradient i {
+    margin-right: 8px;
+}
+
 .btn-gradient button:hover {
     color: var(--color--white) !important;
 }
@@ -190,11 +203,20 @@ p {
 }
 
 .content_bg {
-    background-image: url('../img/Background-2.jpg');
-    background-repeat: no-repeat;
-    background-position: 0% 80%;
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+
+.content_bg::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
     width: 100%;
     height: 100%;
+    background-position: 0% 80%;
+    background-image: url('../img/Background-2.jpg');
+    background-repeat: no-repeat;
 }
 
 .content h2,
@@ -310,6 +332,10 @@ p {
 .icon_heading span:hover {
     color: var(--color-vivid-orange);
     transition: color 0.3s;
+}
+
+.icon_heading svg {
+    margin-right: 10px;
 }
 
 .content_bgtwo h4 {
@@ -518,9 +544,6 @@ p {
     font-size: 17px;
 }
 
-.footer_content li a:hover {
-    text-decoration: underline;
-}
 
 .social_icon_top {
     display: block !important;
@@ -829,6 +852,10 @@ button:focus {
     font-size: small;
 }
 
+.card_body i {
+    margin-right: 0.5rem;
+}
+
 .page-link {
     color: #212529 !important;
     background-color: #fff !important;
@@ -1083,6 +1110,10 @@ button:focus {
     border-radius: 45px 0 45px 0;
 }
 
+.check_list i {
+    margin-right: 16px;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -1282,5 +1313,11 @@ button:focus {
         font-size: 30px;
         font-weight: 700;
         letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        padding: 0px;
     }
 }

@@ -22,6 +22,7 @@ $(".slider_images").slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   autoplay: true,
+  rtl: true,
 });
 
 var filtered = false;
