@@ -1,16 +1,3 @@
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 100) {
-//       // Change the scroll distance as needed
-//       $(".navbar").addClass("fixed-top").fadeIn("slow");
-//     } else {
-//       $(".navbar").fadeOut("slow", function () {
-//         $(this).removeClass("fixed-top");
-//       });
-//     }
-//   });
-// });
-//
 var dropdownToggle = document.querySelector(".custom-dropdown-toggle");
 dropdownToggle.addEventListener("click", function () {
   var dropdownMenu = this.nextElementSibling;
@@ -22,6 +9,7 @@ $(".slider_images").slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   autoplay: true,
+  rtl: true,
 });
 
 var filtered = false;
@@ -45,6 +33,7 @@ $(".slicktwo").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
+  rtl: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -54,6 +43,7 @@ $(".slicktwo").slick({
         infinite: true,
         dots: true,
         autoplay: true,
+        rtl: true,
       },
     },
     {
@@ -62,6 +52,7 @@ $(".slicktwo").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        rtl: true,
       },
     },
     {
@@ -70,6 +61,7 @@ $(".slicktwo").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        rtl: true,
       },
     },
   ],
@@ -105,6 +97,7 @@ languageButtons.forEach((button) => {
     handleLanguageButtonClick(languageImgSrc);
   });
 });
+
 ///////////////////////////////////////////
 function showPage(pageId) {
   document.getElementById("cardspage").style.display = "none";

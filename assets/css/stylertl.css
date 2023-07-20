@@ -196,10 +196,22 @@ p {
 }
 
 /* Modal Styling */
+.btn-close {
+    margin: 0 0 auto 0 !important;
+}
+
 .modal_btn button:hover {
     background-color: #f3f6fd;
     color: var(--color--black) !important;
     border: 1px solid transparent !important;
+}
+
+.modal_btn button {
+    text-align: right !important;
+}
+
+.modal_btn button img {
+    margin-left: 8px;
 }
 
 .col_image img {
@@ -521,6 +533,7 @@ p {
     font-size: 25px;
     font-weight: 600;
     line-height: 28px;
+    text-align: right !important;
 }
 
 .accordion-button:focus {
@@ -532,8 +545,10 @@ p {
 
 .accordion-button::after {
     background-image: url('../icon/arrow-down-sign-to-navigate.png') !important;
-
+    margin-left: 0 !important;
+    margin-right: auto !important;
 }
+
 
 .accordion-body {
     font-family: "Comfortaa", Sans-serif;
